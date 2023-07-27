@@ -6,7 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "./scripts/install.sh",
-    "uninstall": "./scripts/uninstall.sh"
+    "uninstall": "./scripts/uninstall.sh",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "rimraf ./build && tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint",
+    "prestart": "source ./scripts/env.sh",
+    "start": "npx nodemon"
   },
   "keywords": [],
   "author": "",
