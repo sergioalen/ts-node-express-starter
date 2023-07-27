@@ -1,4 +1,5 @@
 import * as express from 'express';
+import './utils/config';
 
 const port = 8000;
 const app = express();

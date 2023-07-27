@@ -1,13 +1,15 @@
 #!/bin/bash
 
 npm install express \
-    winston
+    winston \
+    supertest
 
 npm install --save-dev \
     @types/express \
     gts \
     ts-node \
     nodemon \
-    rimraf
+    rimraf \
+    env-cmd
 
 npx gts init
