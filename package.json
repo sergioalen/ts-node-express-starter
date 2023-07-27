@@ -9,13 +9,14 @@
     "uninstall": "./scripts/uninstall.sh",
     "lint": "gts lint",
     "clean": "gts clean",
-    "compile": "rimraf ./build && tsc",
+    "compile": "tsc",
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run lint",
     "prestart": "source ./scripts/env.sh",
-    "start": "npx nodemon"
+    "start": "npx nodemon",
+    "build": "rimraf ./build && npm run compile"
   },
   "keywords": [],
   "author": "",
