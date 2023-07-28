@@ -1,15 +1,24 @@
 #!/bin/bash
 
-npm install express \
-    winston \
-    supertest
+npm install \
+    compression \
+    cors \
+    express \
+    helmet \
+    http-terminator \
+    morgan \
+    supertest \
+    winston 
 
 npm install --save-dev \
+    @types/compression \
+    @types/cors \
     @types/express \
+    @types/morgan \
+    env-cmd \
     gts \
-    ts-node \
     nodemon \
     rimraf \
-    env-cmd
+    ts-node \
 
 npx gts init
