@@ -4,7 +4,7 @@ import * as cors from 'cors';
 import helmet from 'helmet';
 
 import logger from './utils/logger';
-import loggerMiddleware from './utils/logger-middleware';
+import loggerMiddleware from './middlewares/httpLogger';
 import api from './controllers/api';
 
 const app = express();
