@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config ./jest.config.js --forceExit --coverage --verbose  --runInBand --watchAll",
+    "test:ci": "jest --config ./jest.config.js --runInBand --ci",
     "install": "./scripts/install.sh",
     "uninstall": "./scripts/uninstall.sh",
     "lint": "gts lint",

@@ -22,3 +22,5 @@ async function shutdown(signal: string) {
 
 process.on('SIGTERM', shutdown);
 process.on('SIGINT', shutdown);
+
+export default server;

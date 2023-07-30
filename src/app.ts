@@ -5,6 +5,7 @@ import helmet from 'helmet';
 
 import logger from './utils/logger';
 import loggerMiddleware from './utils/logger-middleware';
+import api from './controllers/api';
 
 const app = express();
 
@@ -18,6 +19,9 @@ app.use(loggerMiddleware);
 app.use(compression()); // Not required if using reverse proxy
 app.use(express.json());
 app.use(express.urlencoded());
+
+// API
+app.use('/api', api);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
