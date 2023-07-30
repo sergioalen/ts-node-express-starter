@@ -12,12 +12,10 @@ Click on "Use this template" button to create a new repository:
 
 ![github create template button](./assets/images/create_repo_button.png)
 
-Clone your newly created repo then run:
+For a fresh install of all the dependencies run the following from the root directory:
 
 ```bash
-npm install
+./scripts/install.sh
 ```
 
-NPM will use the install script located in `scripts/install.sh` and install all dependencies.
-
-**_NOTE:_**  This will install the latest versions on all dependencies except in the `gts` package that will install the latest versions supported by it. Feel free to change the script to target specific versions according to your needs.
+**_NOTE:_**  This will install the latest versions for all dependencies except in the `gts` package that will install the latest versions supported by it. Feel free to change the script to target specific versions according to your needs.
