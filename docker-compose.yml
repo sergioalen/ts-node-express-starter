@@ -1,0 +1,7 @@
+services:
+  app:
+    build:
+      context: .
+      target: builder-client
+    ports:
+     - "8000:8000"

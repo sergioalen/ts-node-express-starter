@@ -13,11 +13,13 @@ function requireEnvironmnetVariable(variableName: string): string {
 
 type AppConfig = {
   isProd: boolean;
+  port: number;
   exampleSecret: string;
 };
 
 const appConfig: AppConfig = {
   isProd: process.env.NODE_ENV === 'production', // Anything else is treated as 'dev'
+  port: Number(process.env.PORT) || 8000,
   exampleSecret: requireEnvironmnetVariable('EXAMPLE_SECRET'), // This is just an example, remove before flight.
 };
 

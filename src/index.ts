@@ -1,7 +1,8 @@
 import app from './app';
 import {createHttpTerminator} from 'http-terminator';
 import logger from './utils/logger';
-const port = 8000;
+import appConfig from './config/appConfig';
+const port = appConfig.port;
 
 const server = app.listen(port, () => {
   console.log(`Listening on port ${port}`);
