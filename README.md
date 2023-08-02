@@ -10,7 +10,7 @@ It uses Google's [gts](https://github.com/google/gts) to fix lint and formatting
 
 Click on "Use this template" button to create a new repository:
 
-![github create template button](./assets/images/create_repo_button.png)
+![github create template button](./public/images/create_repo_button.png)
 
 For a fresh install of all the dependencies run the following from the root directory:
 
